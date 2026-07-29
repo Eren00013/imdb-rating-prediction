@@ -1,0 +1,35 @@
+{
+  "rows_after_duplicate_removal": 4998,
+  "numeric_features": 15,
+  "complete_numeric_rows": 3768,
+  "split_rows": {
+    "train": 2260,
+    "validation": 754,
+    "test": 754
+  },
+  "strongest_numeric_correlations": {
+    "num_voted_users": 0.4112993809563442,
+    "num_critic_for_reviews": 0.3072257008724777,
+    "num_user_for_reviews": 0.2927449779066296,
+    "duration": 0.2626182989045791,
+    "movie_facebook_likes": 0.2496035172128255
+  },
+  "validation_metrics": {
+    "linear_regression": {
+      "r2": 0.31704630092226715,
+      "mae": 0.6735516479431622,
+      "rmse": 0.8966444860820422
+    },
+    "random_forest": {
+      "r2": 0.5631645124806359,
+      "mae": 0.5315755968169761,
+      "rmse": 0.7171064147527725
+    }
+  },
+  "selected_model": "random_forest",
+  "test_metrics": {
+    "r2": 0.5066015334396339,
+    "mae": 0.5228289124668435,
+    "rmse": 0.7149031699750101
+  }
+}
