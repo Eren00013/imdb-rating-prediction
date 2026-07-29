@@ -28,6 +28,8 @@ dataset provides 3,768 movies and 15 input features.
 The selected random forest reaches an R² of 0.51 and a mean absolute error of
 0.52 IMDb score points on the test set.
 
+[View the anonymized project poster](poster/imdb_rating_prediction_poster.pdf)
+
 ![IMDb score distribution](outputs/score_distribution.png)
 
 ![Strongest numeric correlations](outputs/target_correlations.png)
@@ -56,9 +58,11 @@ data/movie_metadata.csv
 ```bash
 python -m pip install -r requirements.txt
 python src/analysis.py
+python src/build_poster.py
 ```
 
-The script writes the metrics and generated charts to `outputs/`.
+The analysis script writes metrics and charts to `outputs/`. The poster builder
+creates an A2 project poster in `poster/`.
 
 You can also select different paths:
 
@@ -76,8 +80,11 @@ imdb-rating-prediction/
 │   ├── predicted_vs_actual.png
 │   ├── score_distribution.png
 │   └── target_correlations.png
+├── poster/
+│   └── imdb_rating_prediction_poster.pdf
 ├── src/
-│   └── analysis.py
+│   ├── analysis.py
+│   └── build_poster.py
 ├── .gitignore
 ├── README.md
 └── requirements.txt
